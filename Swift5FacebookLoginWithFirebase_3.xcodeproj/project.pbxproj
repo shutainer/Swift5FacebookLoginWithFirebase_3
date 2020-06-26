@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		290849B528E872BFF560A679 /* Pods_Swift5FacebookLoginWithFirebase_3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837FC157C81DD672324926CE /* Pods_Swift5FacebookLoginWithFirebase_3.framework */; };
+		7383B04124A64AA000140393 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7383B04024A64AA000140393 /* NextViewController.swift */; };
 		7395182724A4693200364864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7395182624A4693200364864 /* AppDelegate.swift */; };
 		7395182924A4693200364864 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7395182824A4693200364864 /* SceneDelegate.swift */; };
 		7395182B24A4693200364864 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7395182A24A4693200364864 /* ViewController.swift */; };
@@ -18,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7383B04024A64AA000140393 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		7383B04224A6561700140393 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		7383B04324A6561800140393 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		7395182324A4693200364864 /* Swift5FacebookLoginWithFirebase_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift5FacebookLoginWithFirebase_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7395182624A4693200364864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7395182824A4693200364864 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +81,7 @@
 				7395182624A4693200364864 /* AppDelegate.swift */,
 				7395182824A4693200364864 /* SceneDelegate.swift */,
 				7395182A24A4693200364864 /* ViewController.swift */,
+				7383B04024A64AA000140393 /* NextViewController.swift */,
 				7395182C24A4693200364864 /* Main.storyboard */,
 				7395182F24A4693400364864 /* Assets.xcassets */,
 				7395183124A4693400364864 /* LaunchScreen.storyboard */,
@@ -138,6 +143,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 7395181A24A4693200364864;
 			productRefGroup = 7395182424A4693200364864 /* Products */;
@@ -211,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7395182B24A4693200364864 /* ViewController.swift in Sources */,
+				7383B04124A64AA000140393 /* NextViewController.swift in Sources */,
 				7395182724A4693200364864 /* AppDelegate.swift in Sources */,
 				7395182924A4693200364864 /* SceneDelegate.swift in Sources */,
 			);
@@ -223,6 +230,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				7395182D24A4693200364864 /* Base */,
+				7383B04224A6561700140393 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -231,6 +239,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				7395183224A4693400364864 /* Base */,
+				7383B04324A6561800140393 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -242,6 +251,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -302,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -358,6 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9LXTTLRDG7;
 				INFOPLIST_FILE = Swift5FacebookLoginWithFirebase_3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -376,6 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9LXTTLRDG7;
 				INFOPLIST_FILE = Swift5FacebookLoginWithFirebase_3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -57,22 +57,38 @@ class ViewController: UIViewController, LoginButtonDelegate {
         let credential = FacebookAuthProvider.credential(withAccessToken: AccessToken.current!.tokenString)
         
         Auth.auth().signIn(with: credential) { (result, error) in
+            
+            //以下if文はguard let {return} でもよいのか？
             if let error = error {
                 return
             }
             
             self.displayName = result!.user.displayName!
             self.pictureURLString = result!.user.photoURL!.absoluteString
+            self.pictureURLString = self.pictureURLString + "?type=large"
             UserDefaults.standard.set(1, forKey: "loginOK")
             UserDefaults.standard.set(self.displayName, forKey: "displayName")
             UserDefaults.standard.set(self.pictureURLString, forKey: "pictureURLString")
+            
+            let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "next") as! NextViewController
+            self.navigationController?.pushViewController(nextVC, animated: true)
+            
         }
         
     }
     
-    func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
-        <#code#>
+    
+    
+    
+    func loginButtonWillLogin(_ loginButton: FBLoginButton) -> Bool {
+        return true
     }
+    
+    func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
+        print("ログアウトしました！")
+    }
+
+    
 
 //    //github試験用
 //    func Log() {
@@ -83,6 +99,5 @@ class ViewController: UIViewController, LoginButtonDelegate {
 //    func Log2() {
 //        print("gittest")
 //    }
-    
+ 
 }
-
