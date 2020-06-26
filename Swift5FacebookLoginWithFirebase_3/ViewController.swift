@@ -75,5 +75,10 @@ class ViewController: UIViewController, LoginButtonDelegate {
         print("gittest")
     }
     
+    //さらに変更
+    func Log2() {
+        print("gittest")
+    }
+    
 }
 
