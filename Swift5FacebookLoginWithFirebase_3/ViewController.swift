@@ -42,9 +42,13 @@ class ViewController: UIViewController, LoginButtonDelegate {
     }
     
     func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
+        
         if error == nil {
+            
             if result?.isCancelled == true {
+            
                 return
+            
             }
         }
         
@@ -52,8 +56,8 @@ class ViewController: UIViewController, LoginButtonDelegate {
         
         let credential = FacebookAuthProvider.credential(withAccessToken: AccessToken.current!.tokenString)
         
-        Auth.auth().signIn(with: credential) { (result, errror) in
-            if let error = error{
+        Auth.auth().signIn(with: credential) { (result, error) in
+            if let error = error {
                 return
             }
             
@@ -70,15 +74,15 @@ class ViewController: UIViewController, LoginButtonDelegate {
         <#code#>
     }
 
-    //github試験用
-    func Log() {
-        print("gittest")
-    }
-    
-    //さらに変更
-    func Log2() {
-        print("gittest")
-    }
+//    //github試験用
+//    func Log() {
+//        print("gittest")
+//    }
+//
+//    //さらに変更
+//    func Log2() {
+//        print("gittest")
+//    }
     
 }
 
